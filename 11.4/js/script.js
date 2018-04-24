@@ -14,7 +14,7 @@ Phone.prototype.printInfo = function() {
 }
 Phone.prototype.installmentInfo = function() {
   console.log("Buy your " + this.model + " for " + this.price
-    + " or in 50 installments of: " + (this.price/50));
+    + " or in 50 installments of: " + Math.round(this.price/50));
 }
 
 var iPhone6S = new Phone("Apple", "iPhone 6S", 2098, "silver",
